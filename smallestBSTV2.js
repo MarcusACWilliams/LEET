@@ -12,7 +12,15 @@
  */
 var kthSmallest = function(root, k) {
     //Morris Traversal
- 
+    // while current is not Null
+    //if (no left)
+    //      visit current
+    //      current = right
+    //else
+    //      pred = findPred(current)
+    //if(no right pred)
+    //
+    
      var stack = [];
      var Current = root;
      var result;
