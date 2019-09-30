@@ -1,0 +1,22 @@
+{
+  "name": "leet",
+  "version": "1.0.0",
+  "description": "collection of miscellaneous Leetcode problems",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcusACWilliams/LEET.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcusACWilliams/LEET/issues"
+  },
+  "homepage": "https://github.com/MarcusACWilliams/LEET#readme",
+  "devDependencies": {
+    "eslint": "^6.5.0"
+  },
+  "dependencies": {}
+}
