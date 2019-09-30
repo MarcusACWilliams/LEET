@@ -20,12 +20,13 @@ var kthSmallest = function(root, k) {
     //      pred = findPred(current)
     //if(no right pred)
     //
-    
+
      var stack = [];
      var Current = root;
      var result;
  
      while(Current != null) {
+
          if(Current.left == null) {
              stack.push(Current.val);
              Current = Current.right;
@@ -34,21 +35,30 @@ var kthSmallest = function(root, k) {
                 Current = null;
              }
          }else {
-             let node = Current.left;
-                while(node.right != null && node.right != Current) {
-                         node = node.right;
-                }
-             if(node.right == null) {
-                 node.right = Current;
-                 Current = Current.left;
-             }else if(node.right == Current) {
-                 node.right = null;
-                 stack.push(Current.val);
-                 Current = Current.right;
-                 if(stack.length == k){ 
+            // Move to the left child
+            let node = Current.left;
+            // Keep taking the right branch until you find NULL or the "Current" node
+            while(node.right != null && node.right != Current) {
+                        node = node.right;
+            }
+            // Right child is NULL 
+            if(node.right == null) {
+                // point back to the "Predecessor"
+                node.right = Current;
+                // Move to the LEFT subtree --> iterate next loop
+                Current = Current.left;
+            // We have looped back to a "Predecessor"
+            }else if(node.right == Current) {
+                // Remove pointer
+                node.right = null;
+                stack.push(Current.val); // For logging purposes only
+                // Move on to RIGHT subtree --> iterate next loop
+                Current = Current.right;
+
+                if(stack.length == k){ 
                     result = stack.pop();
                     Current = null;
-                 }
+                }
              }
          }
      }
@@ -56,7 +66,6 @@ var kthSmallest = function(root, k) {
      while(stack.length > 0) {
          console.log(stack.pop());
      }
-
      return result;
  };
 

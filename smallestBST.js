@@ -10,18 +10,8 @@
  * @param {number} k
  * @return {number}
  */
-var kthSmallest = function(root, k) {
-   //Morris Traversal
-   // while current is not Null
-    //if (no left)
-    //      visit current
-    //      current = right
-    //else
-    //      pred = findPred(current)
-    //if(no right pred)
-    //   
-    
-        var localRoot = new TreeNode(root[0], 0, root);
+var kthSmallest = function(root, k) {    
+    var localRoot = new TreeNode(root[0], 0, root);
 
     var stack = [];
     var Current = localRoot;
