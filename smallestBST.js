@@ -1,8 +1,6 @@
-/**
- * Definition for a binary tree node.
- * function TreeNode(val) {
- *     this.val = val;
- *     this.left = this.right = null;
+/** Oct 1, 2019 - faster than 92.71% - less memory than 93.75%
+ *  ---> Completion Time: ~20mins <---
+ *
  * }
  */
 /**
