@@ -10,9 +10,8 @@
  * @param {number} k
  * @return {number}
  */
-var kthSmallest = function(root, k) {    
+var kthSmallest = function(root, k) {
     var localRoot = new TreeNode(root[0], 0, root);
-
     var stack = [];
     var Current = localRoot;
 
@@ -47,4 +46,4 @@ function TreeNode(val, index, arr) {
       this.right = arr[(2*index)+2] ? new TreeNode(arr[(2*index)+2],(2*index)+2, arr) : null;
  }
 //kthSmallest([10,5,30,-2,6,null,40,null,2,null,8,null,null,null,null,-1], 2);
-kthSmallest([5,3,6,2,4,null,null,1], 3);
+//kthSmallest([5,3,6,2,4,null,null,1], 3);

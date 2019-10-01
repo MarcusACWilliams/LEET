@@ -24,8 +24,6 @@ class Person {
     
 }
 
-
-
 var P = new Person("Marcus", 32);
 P._id = 88888;
 P.log();

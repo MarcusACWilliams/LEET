@@ -1,6 +1,5 @@
 /** Sept 29, 2019 - faster than 94.11% - less memory than 72.73%
 *  ---> Completion Time: NA <---
-*  
 */
 /**
  * @param {number[]} root
@@ -16,7 +15,6 @@ var kthSmallest = function(root, k) {
     //else
     //      pred = findPred(current)
     //if(no right pred)
-    //
 
      var stack = [];
      var Current = root;
