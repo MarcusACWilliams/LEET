@@ -1,7 +1,6 @@
 /** Oct 1, 2019 - faster than 92.71% - less memory than 93.75%
  *  ---> Completion Time: ~20mins <---
  *
- * }
  */
 /**
  * @param {number[]} root
