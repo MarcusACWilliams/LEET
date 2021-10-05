@@ -1,6 +1,6 @@
 /** Oct 1, 2019 - faster than 74.63% - less memory than 18.05% **EDIT** - faster than (86.61%)31.37% - less memory than 44.4%
  **EDIT** - faster than 93.97% - less memory than 37.50% 
-*  ---> Completion Time: NA <---
+*  ---> Completion Time: Too Long... ) <---
  */
 /**
  * @param {ListNode} l1
